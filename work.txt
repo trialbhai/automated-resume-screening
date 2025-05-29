@@ -1,0 +1,27 @@
+For your Django-based resume screening application, you don't need to become an NLP expert, 
+but a practical understanding of key NLP concepts will make your project more efficient.
+ Here's a breakdown of how much to learn:
+
+1. Essential NLP Basics (Must-Have)
+Text Preprocessing: Tokenization, stop-word removal, stemming, lemmatization.
+
+Regex & Pattern Matching: Extract key sections from resumes.
+
+Named Entity Recognition (NER): Identify names, skills, job titles (spaCy is great for this).
+
+TF-IDF or Word Embeddings (Word2Vec, BERT): Useful for comparing resumes and ranking candidates.
+
+2. Intermediate NLP (Useful for Optimization)
+Fine-Tuning Pretrained Models: Train BERT or spaCy models for resume classification.
+
+Sentence Embeddings: Use models like SBERT to compare resumes more effectively.
+
+ML-Based Resume Scoring: Build simple scikit-learn models for ranking based on extracted data.
+
+3. Advanced NLP (Nice-to-Have for Future Growth)
+Conversational AI: If you want to integrate chat-based interactions for screening.
+
+Automated Resume Summarization: Extract key achievements dynamically using NLP techniques.
+
+If you’re aiming for a functional prototype, focus mostly on the essentials and add intermediate concepts as needed. 
+Would you like a roadmap to start learning step by step?

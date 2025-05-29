@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Resume Screening App</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <div class="containerh">
+      <h1>Welcome to ResumeAnalyzer</h1>
+
+      <a href="{% url 'upload_resume' %}">Upload Resume</a>
+    </div>
+  </body>
+</html>
