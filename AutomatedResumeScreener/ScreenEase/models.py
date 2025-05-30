@@ -1,10 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.contrib.auth.hashers import make_password
 from django.contrib import admin
-import datetime
-
-
 
 class Resume(models.Model):
     """Stores resume files with parsed text and extracted information."""
@@ -14,22 +10,18 @@ class Resume(models.Model):
     skills = models.JSONField(blank=True, null=True)
     education = models.TextField(blank=True, null=True)
     experience = models.TextField(blank=True, null=True)
-    created_at = models.DateTimeField(auto_now_add=True, blank=True)
-    uploaded_at = models.DateTimeField(auto_now_add=True, blank=True)
+    uploaded_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return f"Resume #{self.id} - {self.user.username}"
 
-
 class UploadedResume(models.Model):
     """Model for storing uploaded resumes separately."""
     file = models.FileField(upload_to='uploads/')
+    created_at = models.DateTimeField(auto_now_add=True)
 
-    created_at = models.DateTimeField(auto_now_add=True, blank=True)
-    uploaded_at = models.DateTimeField(auto_now_add=True, blank=True)
     def __str__(self):
         return f"Uploaded Resume: {self.file.name}"
-
 
 @admin.register(Resume)
 class ResumeAdmin(admin.ModelAdmin):
@@ -37,8 +29,6 @@ class ResumeAdmin(admin.ModelAdmin):
     list_display = ('user', 'resume_file', 'uploaded_at')
     search_fields = ('user__username', 'skills', 'education')
     ordering = ('-uploaded_at',)
-    
-
 
 @admin.register(UploadedResume)
 class UploadedResumeAdmin(admin.ModelAdmin):

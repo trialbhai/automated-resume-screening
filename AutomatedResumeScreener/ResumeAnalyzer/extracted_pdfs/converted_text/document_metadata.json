@@ -1,0 +1,110 @@
+{
+  "filename": "converted_text.pdf",
+  "extraction_date": "2025-05-30T15:17:48.199777",
+  "statistics": {
+    "text_blocks": 7,
+    "titles": 0,
+    "images": 0,
+    "tables": 0
+  },
+  "elements_metadata": [
+    {
+      "element_index": 0,
+      "element_type": "Text",
+      "filename": "converted_text.pdf",
+      "extraction_date": "2025-05-30T15:17:48.195087",
+      "page_number": 0,
+      "bbox": [
+        40.0,
+        45.0,
+        166.1320343017578,
+        59.0625
+      ],
+      "content_path": "extracted_pdfs\\converted_text\\text\\text_0.txt"
+    },
+    {
+      "element_index": 1,
+      "element_type": "Text",
+      "filename": "converted_text.pdf",
+      "extraction_date": "2025-05-30T15:17:48.195998",
+      "page_number": 0,
+      "bbox": [
+        40.0,
+        131.25,
+        98.7280044555664,
+        145.3125
+      ],
+      "content_path": "extracted_pdfs\\converted_text\\text\\text_1.txt"
+    },
+    {
+      "element_index": 2,
+      "element_type": "Text",
+      "filename": "converted_text.pdf",
+      "extraction_date": "2025-05-30T15:17:48.196668",
+      "page_number": 0,
+      "bbox": [
+        37.029296875,
+        174.375,
+        207.859619140625,
+        188.4375
+      ],
+      "content_path": "extracted_pdfs\\converted_text\\text\\text_2.txt"
+    },
+    {
+      "element_index": 3,
+      "element_type": "Text",
+      "filename": "converted_text.pdf",
+      "extraction_date": "2025-05-30T15:17:48.197336",
+      "page_number": 0,
+      "bbox": [
+        40.0,
+        260.625,
+        63.928001403808594,
+        274.6875
+      ],
+      "content_path": "extracted_pdfs\\converted_text\\text\\text_3.txt"
+    },
+    {
+      "element_index": 4,
+      "element_type": "Text",
+      "filename": "converted_text.pdf",
+      "extraction_date": "2025-05-30T15:17:48.197974",
+      "page_number": 0,
+      "bbox": [
+        40.0,
+        303.75,
+        84.8283920288086,
+        317.8125
+      ],
+      "content_path": "extracted_pdfs\\converted_text\\text\\text_4.txt"
+    },
+    {
+      "element_index": 5,
+      "element_type": "Text",
+      "filename": "converted_text.pdf",
+      "extraction_date": "2025-05-30T15:17:48.198580",
+      "page_number": 0,
+      "bbox": [
+        40.0,
+        346.875,
+        145.41090393066406,
+        360.9375
+      ],
+      "content_path": "extracted_pdfs\\converted_text\\text\\text_5.txt"
+    },
+    {
+      "element_index": 6,
+      "element_type": "Text",
+      "filename": "converted_text.pdf",
+      "extraction_date": "2025-05-30T15:17:48.199164",
+      "page_number": 0,
+      "bbox": [
+        40.0,
+        390.0,
+        137.847900390625,
+        404.0625
+      ],
+      "content_path": "extracted_pdfs\\converted_text\\text\\text_6.txt"
+    }
+  ]
+}

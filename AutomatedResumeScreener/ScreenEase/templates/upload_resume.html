@@ -1,7 +1,11 @@
-<form method="POST" enctype="multipart/form-data">
-    {% csrf_token %}
-    <label for="resume">Upload Resume:</label>
-    <div>  <input type="text" name="user" required></div>
-    <input type="file" name="resume" accept=".pdf,.docx" required>
-    <button type="submit">Submit</button>
-</form>
+{% if user.is_authenticated %}
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="resume">Upload Resume:</label>
+        <div><input type="text" name="user" required></div>
+        <input type="file" name="resume" accept=".pdf,.docx" required>
+        <button type="submit">Submit</button>
+    </form>
+{% else %}
+    <p class="text-danger">You must be logged in to upload a resume. <a href="{% url 'login' %}">Login here</a></p>
+{% endif %}
