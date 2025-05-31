@@ -55,7 +55,14 @@
             autocomplete="off"
             required
           />
-        </div>
+<div class="mb-3">
+  <label for="work" class="form-label">Register as:</label>
+  <select class="form-select" name="work" required>
+    <option value="" disabled selected>Select Work Type</option>
+    <option  value="Employer">Recruiter</option>
+    <option value="Employee">Employee</option>
+  </select>
+</div>
         <button type="submit" class="btn btn-success w-100">Register</button>
       </form>
       <p class="text-center mt-3">

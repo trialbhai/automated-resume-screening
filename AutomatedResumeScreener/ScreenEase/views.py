@@ -66,6 +66,7 @@ def Register(request):
     if request.method == "POST":
         username = request.POST.get("username")
         email = request.POST.get("email")
+        work = request.POST.get("work")
         password = request.POST.get("password")
         confirm_password = request.POST.get("confirm_password")
 
@@ -74,6 +75,11 @@ def Register(request):
 
         errors = {}
 
+        if work == "Employee" :
+             Employee()
+        elif work == "Employer"  :
+             Employer()
+           
         if not re.match(pattern, password):
             errors["password_error"] = "Password must contain at least one uppercase letter, one number, one special character, and be at least 8 characters long."
 
@@ -85,7 +91,7 @@ def Register(request):
 
         # Create user if validation passes
         try:
-            user = User.objects.create_user(username=username, email=email, password=password)
+            user = User.objects.create_user(username=username, email=email, password=password, work=work)
             user.save()
             return redirect("login")
         except Exception as e:
@@ -93,3 +99,11 @@ def Register(request):
             return render(request, "register.html", {"errors": errors})
 
     return render(request, "register.html")
+
+def Employee():
+    # Logic for Employee registration
+    pass
+
+def Employer():
+    # Logic for Employer registration
+    pass

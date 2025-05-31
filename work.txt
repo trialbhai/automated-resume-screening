@@ -23,5 +23,72 @@ Conversational AI: If you want to integrate chat-based interactions for screenin
 
 Automated Resume Summarization: Extract key achievements dynamically using NLP techniques.
 
-If you’re aiming for a functional prototype, focus mostly on the essentials and add intermediate concepts as needed. 
+If you’re aiming for a functional prototype, focus mostly on the essentials and add intermediate 
+concepts as needed. 
 Would you like a roadmap to start learning step by step?
+
+---------------------------------------------------------------------------------------------------
+
+Great! Now that you have extracted text and images, here are the next logical steps for your automated 
+resume screening system:
+Phase 1: Text Processing & Information Extraction
+1. Parse Resume Sections
+pythondef parse_resume_sections(text):
+    # Identify sections like:
+    # - Personal Information (name, email, phone)
+    # - Experience/Work History
+    # - Education
+    # - Skills
+    # - Certifications
+    # - Projects
+2. Extract Key Information
+
+Personal Details: Name, email, phone, location
+Work Experience: Company names, job titles, dates, descriptions
+Education: Degrees, institutions, graduation dates, GPA
+Skills: Technical skills, programming languages, tools
+Keywords: Industry-specific terms
+
+Phase 2: Analysis & Scoring
+3. Skill Matching
+pythondef match_skills(resume_skills, job_requirements):
+    # Match candidate skills against job requirements
+    # Calculate skill match percentage
+4. Experience Analysis
+
+Years of experience calculation
+Industry relevance scoring
+Job title relevance
+Career progression analysis
+
+5. Education Scoring
+
+Degree relevance
+Institution ranking (if applicable)
+GPA consideration
+
+Phase 3: Advanced Features
+6. Keyword Density Analysis
+
+ATS-friendly keyword matching
+Industry buzzword detection
+
+7. Image Processing (for your extracted images)
+
+Profile photo analysis (if needed)
+Chart/graph text extraction (OCR)
+Logo recognition for company verification
+
+Phase 4: Scoring & Ranking
+8. Create Scoring Algorithm
+pythondef calculate_resume_score(candidate_data, job_criteria):
+    # Weighted scoring based on:
+    # - Skill match (40%)
+    # - Experience relevance (30%)
+    # - Education (20%)
+    # - Other factors (10%)
+9. Generate Reports
+
+Individual candidate analysis
+Ranking of all candidates
+Match percentage with reasoning
